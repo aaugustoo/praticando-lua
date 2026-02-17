@@ -1,6 +1,10 @@
--- define uma função fatorial
+-- refazer fact cuidando dos casos onde os números são negativos
 
 function fact (n)
+
+    if n < 0 then
+        return print ("Número inválido")
+    end
 
     if n == 0 then
         return 1
