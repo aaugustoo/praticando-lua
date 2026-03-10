@@ -1,8 +1,8 @@
-sunday = "monday"
-monday = "sunday"
+Sunday = "monday"
+Monday = "sunday"
 
-t = {sunday = "monday", [sunday] = monday}
+T = {sunday = "monday", [Sunday] = Monday}
 -- sunday = "monday" == ["sunday"] = "monday"
 
-print (t.sunday, t[sunday], t[t.sunday])
--- t.sunday == t["sunday"]; t[sunday] == t["monday"]; t[t.sunday] == t[t["sunday"]] == t["monday"]
+print (T.sunday, T[Sunday], T[T.sunday])
+-- T.sunday == T["sunday"]; T[Sunday] == T["monday"]; T[T.sunday] == T[T["sunday"]] == T["monday"]
